@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: web3signer
     ports:
-      - "25434:5432"
+      - "25443:5432"
     volumes:
       - ./db-data-1:/var/lib/postgresql/data
       - ./postgresql:/docker-entrypoint-initdb.d
@@ -40,7 +40,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: web3signer
     ports:
-      - "25435:5432"
+      - "25444:5432"
     volumes:
       - ./db-data-2:/var/lib/postgresql/data
       - ./postgresql:/docker-entrypoint-initdb.d
